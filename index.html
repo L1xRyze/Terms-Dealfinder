@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Conditions d'utilisation — DealFinder</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%237c6cf0%22/%3E%3Cpath d=%22M10 16.5l4 4 8-9%22 stroke=%22white%22 stroke-width=%223%22 fill=%22none%22/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f7f7fa;
+    --card: #ffffff;
+    --text: #15151b;
+    --muted: #5d5d6b;
+    --border: #e4e4ea;
+    --accent: #6d4ef0;
+    --accent-soft: #6d4ef014;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0a0a0d;
+      --card: #111116;
+      --text: #ececf1;
+      --muted: #9b9bab;
+      --border: #24242c;
+      --accent: #9d8cff;
+      --accent-soft: #9d8cff1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  .bar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; color: var(--text); text-decoration: none; }
+  .brand svg { width: 28px; height: 28px; }
+  nav { margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap; }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+  nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+  main { max-width: 820px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 32px;
+  }
+  .summary p { margin: 0; }
+  .summary ul { margin: 8px 0 0; padding-left: 20px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14.5px; }
+  th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 9px 8px; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; }
+  .table-wrap { overflow-x: auto; }
+  code { font-size: 0.9em; background: var(--accent-soft); padding: 1px 5px; border-radius: 5px; }
+  footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  footer .bar { justify-content: space-between; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <span class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#g)"/><path d="M10 16.5l4 4 8-9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      DealFinder
+    </span>
+    
+  </div>
+</header>
+<main>
+<h1>Conditions d'utilisation</h1>
+<p class="updated">Dernière mise à jour : 19 octobre 2026</p>
+
+<div class="summary">
+  <p><strong>En bref</strong> : DealFinder est un outil gratuit qui signale des annonces Vinted publiques dans des salons Discord. Les informations et estimations sont fournies à titre indicatif, sans garantie. Tout achat se fait directement sur Vinted, sous votre seule responsabilité.</p>
+</div>
+
+<h2>1. Objet et acceptation</h2>
+<p>Les présentes conditions encadrent l'utilisation du bot Discord DealFinder et de son tableau de bord web (ensemble, le « Service »). Ajouter le bot à un serveur, utiliser ses alertes ou accéder au dashboard vaut acceptation de ces conditions et de la politique de confidentialité de DealFinder.</p>
+
+<h2>2. Description du Service</h2>
+<p>DealFinder consulte périodiquement les pages publiques de recherche de Vinted, applique des filtres (marque, prix, taille, état, etc.) et publie les annonces correspondantes dans les salons Discord configurés. Il peut afficher une estimation indicative du potentiel de revente.</p>
+<p>DealFinder est un projet indépendant. Il <strong>n'est ni affilié, ni approuvé, ni sponsorisé</strong> par Vinted ou par Discord.</p>
+
+<h2>3. Accès au Service</h2>
+<ul>
+  <li>Le bot peut être ajouté à un serveur par toute personne disposant des droits d'administration nécessaires sur ce serveur.</li>
+  <li>Le dashboard est réservé aux cofondateurs du projet. Toute tentative d'accès non autorisé est refusée et enregistrée.</li>
+  <li>L'utilisation du Service nécessite un compte Discord et le respect des <a href="https://discord.com/terms" rel="noopener">conditions d'utilisation de Discord</a>.</li>
+</ul>
+
+<h2>4. Utilisation acceptable</h2>
+<p>Vous vous engagez à ne pas :</p>
+<ul>
+  <li>utiliser le Service à des fins illégales, frauduleuses ou de harcèlement ;</li>
+  <li>tenter de perturber, surcharger ou contourner les protections du Service, de Discord ou de Vinted ;</li>
+  <li>utiliser les informations publiées pour contacter massivement des vendeurs, collecter leurs données ou enfreindre les conditions de Vinted ;</li>
+  <li>revendre ou redistribuer le Service sans l'accord des cofondateurs.</li>
+</ul>
+
+<h2>5. Informations fournies</h2>
+<ul>
+  <li>Les annonces proviennent des pages publiques de Vinted au moment de leur consultation. Elles peuvent être inexactes, modifiées, vendues ou supprimées depuis.</li>
+  <li>Les estimations de rentabilité (prix de revente, frais, bénéfice, ROI, score) sont calculées automatiquement à partir de données limitées. Elles sont <strong>indicatives</strong> et ne constituent <strong>ni un conseil financier ou commercial, ni une garantie de revente</strong>. Lorsque les données sont insuffisantes, l'estimation est signalée comme indisponible.</li>
+  <li>Tout achat est conclu directement entre l'acheteur et le vendeur sur Vinted, selon les conditions de Vinted. DealFinder n'intervient pas dans la transaction.</li>
+</ul>
+
+<h2>6. Disponibilité</h2>
+<p>Le Service est fourni gratuitement, « en l'état » et selon sa disponibilité. Il peut être interrompu, ralenti ou modifié à tout moment, notamment pour maintenance ou lorsque Vinted ou Discord limitent temporairement l'accès. Aucun délai de détection ni nombre d'alertes n'est garanti.</p>
+
+<h2>7. Responsabilité</h2>
+<p>Dans les limites prévues par la loi, les cofondateurs de DealFinder ne sauraient être tenus responsables des décisions d'achat ou de revente prises sur la base des informations publiées, des pertes financières, des annonces manquées, ni des interruptions du Service ou des services tiers (Discord, Vinted, hébergeur).</p>
+
+<h2>8. Propriété intellectuelle</h2>
+<p>Le nom, le logo et le code de DealFinder appartiennent à ses cofondateurs. Les marques Vinted et Discord, ainsi que les marques citées dans les annonces, appartiennent à leurs titulaires respectifs. Les photos et descriptions des annonces restent la propriété de leurs auteurs ; DealFinder ne les copie pas et les affiche uniquement par lien vers Vinted.</p>
+
+<h2>9. Suspension et retrait</h2>
+<p>Vous pouvez cesser d'utiliser le Service à tout moment en retirant le bot de votre serveur. Les cofondateurs peuvent retirer le bot d'un serveur ou suspendre le Service en cas d'utilisation contraire aux présentes conditions.</p>
+
+<h2>10. Modifications</h2>
+<p>Ces conditions peuvent évoluer. La date de dernière mise à jour figure en haut de cette page. Continuer à utiliser le Service après une modification vaut acceptation de la nouvelle version.</p>
+
+<h2>11. Droit applicable</h2>
+<p>Les présentes conditions sont régies par le droit français. En cas de litige, une solution amiable sera recherchée en priorité avant toute action devant les juridictions compétentes.</p>
+
+<h2>12. Contact</h2>
+<p>Pour toute question concernant ces conditions : par message privé Discord à l'un des cofondateurs de DealFinder.</p>
+
+</main>
+<footer>
+  <div class="bar">
+    <span>© 2026 DealFinder</span>
+    <span>Contact : par message privé Discord à l'un des cofondateurs de DealFinder</span>
+  </div>
+</footer>
+</body>
+</html>
